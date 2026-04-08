@@ -42,9 +42,7 @@ The system is implemented using **Embedded C (Arduino framework) and simulated u
    * LED turns OFF
    * Status shows "NORMAL"
 
-# Analog voltage to temperature 
-
-  ***** Without delay() *****
+### Analog voltage to temperature 
 
   Convert to Voltage: Convert the raw value into millivolts.
   Formula (5V Arduino): (rawReading * 5000.0) / 1024.0
