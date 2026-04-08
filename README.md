@@ -29,6 +29,10 @@ The system is implemented using **Embedded C (Arduino framework) and simulated u
 
 ---
 
+## Circuit Diagram
+![Circuit](circuit_diagram.png)
+---
+
 ## Working Principle
 
 1. Sensor provides analog voltage based on temperature
