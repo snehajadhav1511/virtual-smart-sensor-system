@@ -42,6 +42,22 @@ The system is implemented using **Embedded C (Arduino framework) and simulated u
    * LED turns OFF
    * Status shows "NORMAL"
 
+# Analog voltage to temperature 
+
+  ***** Without delay() *****
+
+  Convert to Voltage: Convert the raw value into millivolts.
+  Formula (5V Arduino): (rawReading * 5000.0) / 1024.0
+  Formula (3.3V Arduino): (rawReading * 3300.0) / 1024.0
+
+  Subtract Offset: The TMP36 outputs 500mV at 0°C to allow for 
+  negative temperatures.
+  Formula: milliVolts - 500
+
+  Calculate Temperature: Divide by 10 
+  (since the sensor changes 10mV per 1°C).
+
+  Formula: (milliVolts - 500) / 10
 ---
 
 ## Sample Output
